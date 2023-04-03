@@ -1,5 +1,5 @@
 *{
-    background-color: #dcdaa3;
+    background-color: #fff7e7;
     border-radius: 10px;
     font-family: 'Rampart One', cursive;
     color: #ffffff;
@@ -17,37 +17,48 @@ body{
     display: flex;
     justify-content: space-around;
     align-items:center;
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
     
 }
 .btn-principal{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
 }
 .buttons{
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
 }
 .numbers{
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #b5dca3;
+    background-color: #eeeaea;
     
 }
+.result,
 .number{
     width: 55px;
     height: 55px;
-    background-color: rgba(14, 68, 8, 0.736);
+    background-color: rgba(140, 127, 86, 0.736);
     margin: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 p{
     background-color:transparent;
+}
+.result p,
+.number p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sevenToNine, 
 .fourToSix,
@@ -57,7 +68,7 @@ p{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
 }
 .operators .number{
     text-align: center;
@@ -76,26 +87,41 @@ p{
     width: 300px;
     border-style: solid;
     border-color: #242d2189;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    background-color: #b5dca3;
+    /* box-shadow: rgba(0, 0, 0, 0.185) 0px 10px 20px 4px; */
+    background-color: #eeeaea;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 #inside{
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
+}
+.displaytxt{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: #585043;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 28px;
+    
 }
 #display{
     width: 300px;
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(255, 255, 255);
     height: 80px;
     margin: 20px;
     margin-top: 10px;
-    box-shadow: rgba(255, 255, 255, 0.5) 0px 4px 12px;
+    border: #242d2189;
+    border-style: solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
 }
 
 .operators{
-    background-color: #b5dca3;
+    background-color:  #eeeaea;
 }
 #clear, 
 #delete{
@@ -107,22 +133,26 @@ p{
     margin-bottom: 15px;
     height: 50px;
     width: 130px;
-    background-color: rgba(170, 103, 189, 0.527);
+    background-color: rgba(175, 108, 32, 0.527);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
 }
 
 #clear:hover,
 #delete:hover{
-    background-color: #7d3093;
+    background-color: #937e55;
+    transition: 0.3s;
 }
 #clear:active,
 #delete:active{
-    background-color: #9d52b1;
+    background-color: #937e55;
 }
 
+.result:hover,
 .number:hover{
-    background-color: #495843;
+    background-color: #585043;
 }
+.result:hover,
 .number:active{
-    background-color: #57774a;
+    background-color: #585043;
 }

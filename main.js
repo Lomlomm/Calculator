@@ -1,18 +1,36 @@
+const display = document.querySelector(".displaytxt");
+const buttons = document.querySelectorAll(".number p");
 
+buttons.forEach( (button) =>  {
+    button.addEventListener("click", () => {
+        display.textContent+=`${button.textContent}`
+    })
+})
 
-function main(){
-    const display = document.querySelector('#display')
-    const buttons = document.querySelectorAll('p')
-
-    buttons.forEach(addEventListener("click", (button) => {
-        display.textContent += button.textContent
-        console.log(button)
-    }))
-
-
+function operator(){
+    const operators = document.querySelectorAll(".operators .number");
+    operators.forEach((operator) => {
+        operator.addEventListener("click", () => {
+            var selected = operator.textContent
+        })
+    })
 }
 
+function result(){
+    const equals = document.querySelector("#equal");
+    equals.addEventListener("click", () => {
+        var text = display.textContent
+        selected 
 
-function sum(){
-
+    })
 }
+
+function clear(){
+    const clear = document.querySelector("#clear")
+    clear.addEventListener("click", () => {
+        display.textContent = "";
+    })
+}
+
+result()
+clear()
